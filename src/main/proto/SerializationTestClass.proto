@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "proto.serializers";
+
+message SerializationTestClass {
+  string words           = 1; // required
+  repeated string list   = 2;
+  map<string, int32> map = 3;
+  int32 integer          = 4; // required
+  float floatNumber      = 5; // required
+}
